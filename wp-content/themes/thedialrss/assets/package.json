@@ -1,0 +1,20 @@
+{
+  "name": "vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build --watch",
+    "admin": "vite build --config vite.config.admin.js && node cleanup-admin.js",
+    "update": "npm update"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "terser": "^5.16.4",
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}
