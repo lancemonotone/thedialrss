@@ -1,4 +1,4 @@
-<?php namespace magneti;
+<?php namespace thedial;
 
 class Assets {
 	public function __construct() {
