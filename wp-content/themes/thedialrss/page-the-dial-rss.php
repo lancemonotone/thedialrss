@@ -1,9 +1,11 @@
 <?php namespace thedial;
+
 // Set the content type to application/rss+xml
-header('Content-Type: application/rss+xml; charset=utf-8');
+header( 'Content-Type: application/rss+xml; charset=utf-8' );
 
-$rss = TheDialRSSParser::fetchAndParse();
+$url = get_field( 'the_dial_rss', 'options' );
 
-// Echo the XML string
+$rss = RSS_Handler::fetchAndParse( $url );
+
 echo $rss;
 

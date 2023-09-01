@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_64d2d0e1a7952",
-            "label": "The Dial RSS",
+            "label": "The Dial RSS Main Feed",
             "name": "the_dial_rss",
             "aria-label": "",
             "type": "text",
@@ -21,6 +21,51 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_64f1f6756dae8",
+            "label": "Combined Issue Feed",
+            "name": "all_feeds",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_64f1f6906dae9",
+                    "label": "Issue Feed",
+                    "name": "issue_feed",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64f1f6756dae8"
+                }
+            ]
         }
     ],
     "location": [
@@ -41,5 +86,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1691539449
+    "modified": 1693579109
 }
