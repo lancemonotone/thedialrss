@@ -1,0 +1,2 @@
+!function(e){"function"==typeof define&&define.amd?define(e):e()}((function(){"use strict";class e{constructor(){this.cacheClearButton=document.querySelector("#wp-admin-bar-clear-rss-cache a"),this.events()}events(){this.cacheClearButton.addEventListener("click",(()=>this.clearCache()))}clearCache(){console.log("Clearing cache...");const e=new XMLHttpRequest;e.open("GET","/wp-admin/admin-ajax.php?action=clear_cache",!0),e.send(),window.location.reload(!0)}}new e}));
+//# sourceMappingURL=admin.js.map
