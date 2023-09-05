@@ -4,7 +4,7 @@
 // transients starting with the prefix 'thedial_rss_'.
 class Cache {
     public function __construct() {
-        if ( current_user_can( 'edit_posts' ) ) {
+        if ( is_admin() && current_user_can( 'edit_posts' ) ) {
             add_action( 'admin_bar_menu', [ $this, 'addClearCacheButton' ], 999 );
             add_action( 'wp_ajax_clear_cache', [ $this, 'clearCache' ] );
             add_action( 'wp_ajax_nopriv_clear_cache', [ $this, 'clearCache' ] );
